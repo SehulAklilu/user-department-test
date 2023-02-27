@@ -11,6 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav class="p-2 ">
         <RouterLink class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-800 rounded text-white" to="/">Home</RouterLink>
         <RouterLink class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-800 rounded text-white" to="/users">Users</RouterLink>
+        <RouterLink class="px-4 py-2 mr-4 bg-indigo-600 hover:bg-indigo-800 rounded text-white" to="/departments">Departments</RouterLink>
       </nav>
     </div>
   </header>

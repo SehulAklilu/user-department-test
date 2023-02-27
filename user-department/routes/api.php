@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([], function(){
     Route::apiResource('users', UserController::class);
+    Route::apiResource('departments', DepartmentController::class);
 });
 /*
 |--------------------------------------------------------------------------

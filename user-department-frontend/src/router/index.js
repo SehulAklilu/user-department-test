@@ -34,6 +34,31 @@ const router = createRouter({
       component: () => import('../views/Users/UserEdit.vue'),
       props: true
     }
+    {
+      path: '/departments',
+      name: 'Departments',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Department/DepartmentIndex.vue')
+    },
+    {
+      path: '/departments/create',
+      name: 'CreateDepartments',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Department/DepartmentCreate.vue')
+    },
+    {
+      path: '/departments/:id/edit',
+      name: 'EditDepartments',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Department/DepartmentEdit.vue'),
+      props: true
+    }
   ]
 })
 
